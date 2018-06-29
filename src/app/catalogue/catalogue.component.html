@@ -1,0 +1,16 @@
+<div class="row" *ngFor="let data of datas">
+  <div class="col-lg-12 text-center">
+    <label>{{data.label}}</label>
+
+    <img src="http://{{data.imagePath}}" alt="" height="40px" class="rounded-circle img-fluid d-block mx-auto">
+  </div>
+
+  <div class="col-lg-3 col-sm-4 text-center mb-4" *ngFor="let serv of data.Services">
+    <h3>
+      <small>{{serv.label_service}}</small>
+    </h3>
+
+  </div>
+  <hr>
+</div>
+
